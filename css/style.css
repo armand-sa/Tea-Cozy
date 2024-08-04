@@ -25,6 +25,7 @@ Index:
 
 html,
 body {
+  box-sizing: border-box;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   color: #fff5ee;
@@ -35,6 +36,7 @@ body {
   line-height: 1.5;
   scroll-behavior: smooth;
   font-size: 16px;
+  text-align: center;
 }
 
 /* 1.1 Text Styles */
@@ -51,6 +53,7 @@ h2 {
 
 #mission h2 {
   color: #fff5ee;
+  font-size: 1.2rem;
 }
 
 h3 {
@@ -125,9 +128,6 @@ nav li > a:hover  {
 /* 3. Main Section */
 /* ------------------------------------------------------------- */
 
-
-/* 3.1 Mission Section*/
-
 main {
   display: flex;
   flex-direction: column;
@@ -135,15 +135,30 @@ main {
   overflow: hidden;
 }
 
+/* 3.1 Mission Section*/
+
 #mission {
-  max-height: 700px;
   position: relative;
+  margin-top: 69px;
+  height: 700px;
+}
+
+#mission > figure {
+  height: 100%;
+  width: 100%;
+}
+
+#mission > figure > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
 }
 
 #mission > article {
   position: absolute;
   width: 100%;
-  top: 409px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 5;
   background-color: black;
   padding: 10px;
