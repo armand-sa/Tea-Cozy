@@ -37,6 +37,7 @@ body {
   scroll-behavior: smooth;
   font-size: 16px;
   text-align: center;
+  font-weight: bold;
 }
 
 /* 1.1 Text Styles */
@@ -44,16 +45,19 @@ body {
 h1 {
   font-size: 2rem;
   color: #FD5B58;
+  margin-bottom: 15px;
 }
 
 h2 {
   font-size: 1.5rem;
   color: #FD5B58;
+  margin-bottom: 15px;
 }
 
 #mission h2 {
   color: #fff5ee;
   font-size: 1.2rem;
+  
 }
 
 h3 {
@@ -170,6 +174,24 @@ main {
   max-width: 1000px;
 }
 
+#featured > article {
+  width: 100%;
+  padding-top: 69px;
+  padding-bottom: 15px;
+}
+
+#featured > .locations-img-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#featured > .locations-img-container > figure {
+  margin: 15px;
+}
+
+
 .img-1 > img,
 .img-2 > img,
 .img-3 > img,
@@ -177,12 +199,18 @@ main {
 .img-5 > img {
   max-width: 300px;
   max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+
 }
 
 /* 3.3 Locations Section */
 
 #locations {
-  max-height: 500px;
+  height: 500px;
+  margin-top: 69px;
+  padding-bottom: 15px;
+
 }
 
 
