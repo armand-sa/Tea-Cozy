@@ -40,6 +40,10 @@ body {
   font-weight: bold;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* 1.1 Text Styles */
 
 h1 {
@@ -75,12 +79,12 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  border-bottom: 1px solid #fff5ee;
+  border-bottom: 1px solid rgba(255, 245, 238, 0.2);
   width: 100%;
   height: 69px;
   box-shadow: 0 4px 8px rgba(253, 91, 88, 0.3);
   margin-bottom: 69px;
-  background-color: black;
+  background-color: #080808;
 }
 
 /* nav */
@@ -136,7 +140,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 
 /* 3.1 Mission Section*/
@@ -200,29 +203,90 @@ main {
   max-width: 300px;
   max-height: 200px;
   object-fit: cover;
+  object-position: center;
   margin-bottom: 10px;
-
 }
 
 /* 3.3 Locations Section */
 
 #locations {
-  height: 500px;
+  position: relative;
   margin-top: 69px;
-  padding-bottom: 15px;
-
+  height: 700px;
 }
 
+#locations > figure {
+  width: 100%;
+  height: 100%;
+}
+
+#locations > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#locations > .card-container {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#locations > .card-container > .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: black;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: 400;
+}
 
 /* ------------------------------------------------------------- */
-/* 4. Main Section */
+/* 4. Footer Section */
 /* ------------------------------------------------------------- */
 
 
 /* 4.1 Contact Section */
 
+footer {
+  border-top: 1px solid rgba(255, 245, 238, 0.2);
+  margin-top: 69px;
+  background-color: #080808;
+}
+
+.contact > h2 {
+  margin: 0;
+}
+
 .contact {
-  max-height: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
 }
 
 /* 4.2 Legal Section */
+
+.legal {
+  border-top: 1px solid rgba(255, 245, 238, 0.2);
+  padding: 20px;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
