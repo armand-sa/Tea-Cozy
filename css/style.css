@@ -61,7 +61,6 @@ h2 {
 #mission h2 {
   color: #fff5ee;
   font-size: 1.2rem;
-  
 }
 
 h3 {
@@ -128,7 +127,7 @@ nav li > a  {
 /* Nav Links Hover effect */
 nav li > a:hover  {
   color: #FD5B58;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -244,6 +243,10 @@ main {
   flex-wrap: wrap;
 }
 
+#locations > .card-container > h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .card {
   box-sizing: border-box;
   background-color: black;
@@ -272,6 +275,19 @@ footer {
 
 .contact > h2 {
   margin: 0;
+}
+
+.contact a {
+  color: #fff5ee;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover */
+.contact a:hover {
+  color: #FD5B58;
+  text-decoration: none;
 }
 
 .contact {
