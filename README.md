@@ -2,9 +2,9 @@
 
 ## Front-End Engineer Path - Improved Styling with CSS
 
-[Link to Live Site:]()
+[Link to Live Site:](https://armand-sa.github.io/Tea-Cozy/)
 
-![Screenshot of Project - Tea Cozy]()
+![Screenshot of Project - Tea Cozy](./images/screencapture-website.jpg)
 
 ___
 
